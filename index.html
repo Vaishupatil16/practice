@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Happy Diwali</title>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background: radial-gradient(circle at 20% 20%, #fff6d8, #ffd54f 25%, #ff8a65 60%, #2b2b55 100%);
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    }
+    .card {
+      text-align: center;
+      padding: 40px 60px;
+      border-radius: 16px;
+      background: rgba(255,255,255,0.9);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      transform: scale(1);
+      transition: transform 200ms ease;
+    }
+    .card:hover { transform: scale(1.03); }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 3rem;
+      color: #b71c1c;
+      letter-spacing: 2px;
+    }
+    p {
+      margin: 0;
+      color: #333;
+      font-size: 1.05rem;
+    }
+    .sparkle {
+      display: inline-block;
+      margin-left: 10px;
+      animation: sparkle 1s linear infinite;
+    }
+    @keyframes sparkle {
+      0% { transform: translateY(0) rotate(0); opacity: 1; }
+      50% { transform: translateY(-6px) rotate(18deg); opacity: 0.8; }
+      100% { transform: translateY(0) rotate(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Happy Diwali <span class="sparkle">✨</span></h1>
+    <p>Wishing you light, joy and prosperity.</p>
+  </div>
+</body>
+</html>
